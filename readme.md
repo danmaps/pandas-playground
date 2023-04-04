@@ -1,7 +1,7 @@
 here are some common data cleaning tasks that you can perform using Pandas, along with some code samples:
 
 Removing duplicates:
-```
+```python
 import pandas as pd
 
 # Load the data into a DataFrame
@@ -11,7 +11,7 @@ df = pd.read_csv('data.csv')
 df.drop_duplicates(inplace=True)
 ```
 Handling missing values:
-```
+```python
 import pandas as pd
 
 # Load the data into a DataFrame
@@ -24,7 +24,7 @@ df.fillna(0, inplace=True)
 df.dropna(inplace=True)
 ```
 Renaming columns:
-```
+```python
 import pandas as pd
 
 # Load the data into a DataFrame
@@ -34,7 +34,7 @@ df = pd.read_csv('data.csv')
 df.rename(columns={'old_column_name': 'new_column_name'}, inplace=True)
 ```
 Filtering data based on conditions:
-```
+```python
 import pandas as pd
 
 # Load the data into a DataFrame
@@ -44,7 +44,7 @@ df = pd.read_csv('data.csv')
 filtered_df = df[df['column_name'] > 10]
 ```
 Splitting and combining columns:
-```
+```python
 import pandas as pd
 
 # Load the data into a DataFrame
